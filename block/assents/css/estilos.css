@@ -1,0 +1,270 @@
+:root {
+            --sao-blue: blue;
+            --sao-red: blue;
+            --sao-yellow: yellow;
+            --sao-dark: black;
+            --sao-light: white;
+			--sao-green: green;
+        }
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+    font-family: 'Noto Sans JP', sans-serif;
+
+    background: url(../imagenes/g.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+       header {
+            background: linear-gradient(115deg, var(--sao-blue), var(--sao-red), purple);
+			background-size:50px;
+            color: orange;
+            text-align: center;
+            padding: 3rem 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            position: relative;
+            overflow: hidden;
+			size:40px;
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: red;
+            opacity: 0.3;
+            z-index: 0;
+        }
+        
+        header h1 {
+            position: relative;
+            margin: 0;
+            font-size: 3.5rem;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+            z-index: 1;
+        }
+        
+        header p {
+            position: relative;
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            z-index: 1;
+			color: black;
+        }
+		
+		strong{
+			color: black;
+			 font-family: 'the new thimes roman', sans-serif;
+			 font-size:20px;
+		}
+        .seccion {
+            background-color: rgba(0,0,0,0.1);
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 3px 10px rgba(0,255,0,0.2);
+        }
+        
+        h2 {
+            color: white;
+            border-bottom: 2px solid var(--sao-yellow);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        
+        h3 {
+            color: var(--sao-green);
+            margin-top: 1.5rem;
+        }
+        .re{
+			color:white;
+			font-family:'arial';
+			font-size:14px;
+		}
+		
+		.contenedor-imagenes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.imagen {
+    width: auto;
+    max-width: 45%;    
+    height: 250px;
+    object-fit: contain; 
+    border-bottom: 5px solid var(--sao-dark);
+}
+
+		
+.imagen_2,
+.imagen_3 {
+    width: 90%;
+    max-width: 800px;       
+    height: auto;             
+    object-fit: contain;    
+    display: block;
+    margin: 0 auto;        
+}
+
+.imagen_2 {
+    border-bottom: 5px solid var(--sao-red);
+}
+
+.imagen_3 {
+    border-bottom: 5px solid var(--sao-blue);
+}
+.imagen_8 {
+    border-bottom: 5px solid var(--sao-blue);
+}
+.imagen_8{
+    width: 90%;
+    max-width: 400px;       
+    height: auto;             
+    object-fit: contain;    
+    display: block;
+    margin: 0 auto;        
+}
+.imagen_9 {
+    border-bottom: 5px solid var(--sao-blue);
+}
+.imagen_9{
+    width: auto;
+    max-width: 50%;    
+    height: 250px;
+    object-fit: contain;     
+    display: block;
+    margin: 0 auto;        
+}
+		
+        .informacion {
+            padding: 1.5rem;
+			color: blue;
+        }
+        
+        .contener_pisos {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .cartas_pisos {
+            background: var(--sao-red);
+            border-radius: 15px;
+            padding: 1.8rem;
+            border-left: 5px solid var(--sao-dark);
+            transition: all 0.3s;
+        }
+        
+        .cartas_pisos:hover {
+            background: red;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transform: translateX(5px);
+        }
+        
+        .numero_pisos {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: orange;
+            margin-bottom: 0.5rem;
+        }
+        
+        .info_jefe {
+            background-color: purple;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-top: 1rem;
+			color:white;
+        }
+        
+		.gremios_2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            gap: 2rem;
+            margin-top: 1.5rem;
+			line-height: 1.5;
+            font-family: 'arial', sans-serif;
+			color:red;
+			font-size: 20px;
+        }
+        .gremios {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
+            gap: 2rem;
+            margin-top: 1.5rem;
+			line-height: 1.5;
+            font-family: 'arial', sans-serif;
+			color:white;
+			font-size: 20px;
+        }
+        
+        .carta_gremio {
+           background: linear-gradient(115deg, var(--sao-light), var(--sao-red), purple);
+			background-size:20px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+        
+        .carta_gremio:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        
+        .guild-banner {
+            height: 100px;
+            background: linear-gradient(90deg, var(--sao-blue), var(--sao-red));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .info_gremio {
+            padding: 1.5rem;
+        }
+        
+		.info_gremio::after{
+			right: -12px;
+			 position: relative;
+		}
+        .lider_gremio {
+            font-weight: bold;
+            color: var(--sao-red);
+        }
+        
+        footer {
+            background-color: var(--sao-dark);
+            color: white;
+            text-align: center;
+			padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--sao-red);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: var(--sao-blue);
+            transform: translateY(-3px);
+		}
